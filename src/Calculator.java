@@ -19,5 +19,4 @@ public class Calculator {
         System.out.println(calculator.add(5, 3));
         System.out.println(calculator.subtract(10, 4));
     }
-
 }
