@@ -36,7 +36,15 @@ public class Calculator {
            int result = a * a;
            return "Square of " + a + " = " + result;
        }
-
+       
+       // Square root method
+       public String squareRoot(double a) {
+           if (a < 0) {
+               throw new IllegalArgumentException("Cannot find square root of a negative number");
+           }
+           double result = Math.sqrt(a);
+           return "Square root of " + a + " = " + result;
+    }
     
     public static void main(String[] args) 
     {
@@ -48,5 +56,6 @@ public class Calculator {
         System.out.println(calculator.divide(15, 3));
         
         System.out.println(calculator.square(9));
+        System.out.println(calculator.squareRoot(25));
     }
 }
