@@ -45,7 +45,14 @@ public class Calculator {
            double result = Math.sqrt(a);
            return "Square root of " + a + " = " + result;
     }
-    
+       
+       // Exponential method
+	    public String exponential(double a, double b) {
+	        double result = Math.pow(a, b);
+	        return "Exponential: " + a + " raised to the power of " + b + " = " + result;
+	    }
+
+	    
     public static void main(String[] args) 
     {
 
@@ -57,5 +64,7 @@ public class Calculator {
         
         System.out.println(calculator.square(9));
         System.out.println(calculator.squareRoot(25));
+        
+        System.out.println(calculator.exponential(2, 3));
     }
 }
