@@ -32,6 +32,7 @@ public class Calculator {
            return "Division: " + a + " / " + b + " = " + result;
        }
        
+       // Square
        public String square(int a) {
            int result = a * a;
            return "Square of " + a + " = " + result;
@@ -71,6 +72,12 @@ public class Calculator {
 	        return factorialString.toString();
     }
 	    
+	    // Power method
+	    public String power(double base, double exponent) {
+	        double result = Math.pow(base, exponent);
+	        return "Power of " + base + " raised to the " + exponent + " = " + result;
+	    }
+	    
     public static void main(String[] args) 
     {
 
@@ -85,5 +92,7 @@ public class Calculator {
         
         System.out.println(calculator.exponential(2, 3));
         System.out.println(calculator.factorial(5));
+        
+        System.out.println(calculator.power(2, 5));
     }
 }
