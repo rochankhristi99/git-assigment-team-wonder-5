@@ -78,6 +78,12 @@ public class Calculator {
 	        return "Power of " + base + " raised to the " + exponent + " = " + result;
 	    }
 	    
+	    // Absolute value method
+	    public String absoluteValue(int number) {
+	        int result = Math.abs(number);
+	        return "Absolute Value of " + number + " = " + result;
+    }
+	    
     public static void main(String[] args) 
     {
 
@@ -94,5 +100,6 @@ public class Calculator {
         System.out.println(calculator.factorial(5));
         
         System.out.println(calculator.power(2, 5));
+        System.out.println(calculator.absoluteValue(-10));
     }
 }
