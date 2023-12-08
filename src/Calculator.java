@@ -52,6 +52,24 @@ public class Calculator {
 	        return "Exponential: " + a + " raised to the power of " + b + " = " + result;
 	    }
 
+	    // Factorial method
+	    public String factorial(int n) {
+	        if (n < 0) {
+	            throw new IllegalArgumentException("Cannot find factorial of a negative number");
+	        }
+	        int result = 1;
+	        StringBuilder factorialString = new StringBuilder("Factorial of " + n + " = ");
+	        for (int i = 2; i <= n; i++) {
+	            result *= i;
+	            if (i != n) {
+	                factorialString.append(i).append(" * ");
+	            } else {
+	                factorialString.append(i);
+	            }
+	        }
+	        factorialString.append(" = ").append(result);
+	        return factorialString.toString();
+    }
 	    
     public static void main(String[] args) 
     {
@@ -66,5 +84,6 @@ public class Calculator {
         System.out.println(calculator.squareRoot(25));
         
         System.out.println(calculator.exponential(2, 3));
+        System.out.println(calculator.factorial(5));
     }
 }
