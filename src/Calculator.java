@@ -31,6 +31,12 @@ public class Calculator {
            double result = (double) a / b;
            return "Division: " + a + " / " + b + " = " + result;
        }
+       
+       public String square(int a) {
+           int result = a * a;
+           return "Square of " + a + " = " + result;
+       }
+
     
     public static void main(String[] args) 
     {
@@ -40,5 +46,7 @@ public class Calculator {
         System.out.println(calculator.subtract(10, 4));
         System.out.println(calculator.multiply(6, 7));
         System.out.println(calculator.divide(15, 3));
+        
+        System.out.println(calculator.square(9));
     }
 }
