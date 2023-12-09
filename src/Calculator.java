@@ -46,7 +46,7 @@ public class Calculator {
            double result = Math.sqrt(a);
            return "Square root of " + a + " = " + result;
     }
-       
+
        // Exponential method
 	    public String exponential(double a, double b) {
 	        double result = Math.pow(a, b);
