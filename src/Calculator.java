@@ -8,6 +8,7 @@ public class Calculator {
            return "Addition: " + a + " + " + b + " = " + result;
        }
 
+	
        // Subtraction method
        public String subtract(int a, int b) 
        {
