@@ -21,7 +21,7 @@ public class Calculator {
            int result = a * b;
            return "Multiplication: " + a + " * " + b + " = " + result;
        }
-
+  
        // Division method
        public String divide(int a, int b)
        {
